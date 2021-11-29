@@ -43,7 +43,8 @@ function myFunction(callback) {
 // Callback Function
 
 function todo() {
-  window.open("todo.html");
+  // window.open("todo.html");
+  location.href = "./todo.html";
 }
 
 var xhr = new XMLHttpRequest();
@@ -149,8 +150,9 @@ function getAlert() {
 // Task  Removal Function
 
 function remove(arg) {
-  let n = "tr_" + arg;
-  document.getElementById("items").deleteRow(n);
+  alert("hai");
+  // let n = "tr_" + arg;
+  // document.getElementById("items").deleteRow(n);
 }
 
 // New Task Addition Function
@@ -179,9 +181,7 @@ function newElement() {
   ")' id="+l+" >`;
     td2.appendChild(task);
 
-    td3.innerHTML = `<div onclick='remove(" +
-  l +
-  ")'><i  style='cursor: pointer;' class='fa fa-trash-o'></i></div>`;
+    td3.innerHTML = `<div onclick='deletes()'><i  style='cursor: pointer;' class='fa fa-trash-o'></i></div>`;
 
     document.getElementById("items").appendChild(tr);
 
@@ -196,4 +196,10 @@ function newElement() {
       button: "OK!",
     });
   }
+}
+
+// Delete function for added task
+function deletes() {
+  var e = document.getElementById("items").rows.length - 1;
+  document.getElementById("items").deleteRow(e);
 }
