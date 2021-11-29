@@ -1,0 +1,108 @@
+body {
+  background-color: #34495e;
+  background: url(./images/JO_and_JUDY_Blog_Daily_Planner_Header_1280x1280@2x.jpg)
+    no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+}
+#container {
+  width: 350px;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+  color: black;
+  border-radius: 10px;
+}
+#task {
+  width: auto;
+  height: auto;
+  text-align: center;
+  margin: 0 auto;
+  text-align: center;
+  overflow: auto;
+  color: black;
+  border-radius: 10px;
+}
+#container h1 {
+  margin-bottom: 50px;
+  text-transform: uppercase;
+}
+
+#container .controls {
+  width: 60%;
+  margin: auto;
+}
+
+#container .controls #input {
+  width: 100%;
+  height: 30px;
+  font-size: 20px;
+  padding-left: 5px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  border: 2px solid #b5c5dd;
+  border-radius: 10px;
+}
+#container .controls #input:focus {
+  outline: 0;
+}
+
+#container .controls button {
+  width: auto;
+  background: white;
+  border: none;
+  height: 30px;
+  margin-top: 2px;
+  cursor: pointer;
+  color: white;
+}
+#container .controls button:focus {
+  outline: 0;
+}
+.log-a {
+  color: black;
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+}
+#container .controls button:hover {
+  transform: scale(1.05);
+}
+#container .controls #add {
+  background-color: red;
+  border-radius: 10px;
+}
+#container .controls #remove {
+  background-color: #c0392b;
+  border-radius: 10px;
+}
+#container .mycheck {
+  opacity: 1;
+  border-radius: 10px;
+}
+.visual {
+  opacity: 1 !important;
+  border-radius: 10px;
+}
+.navbar .navbar-brand {
+  font-size: 30px;
+  /* background: transparent; */
+}
+
+.navbar .nav-item {
+  padding: 10px 20px;
+}
+.navbar .nav-link {
+  font-size: 20px;
+  margin-left: 10px;
+}
+.fa-bars {
+  color: #007bff;
+  font-size: 30px;
+}
+
+table {
+  width: auto;
+}
+#check {
+  background-color: red;
+}
