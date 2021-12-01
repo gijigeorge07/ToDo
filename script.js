@@ -150,7 +150,6 @@ function getAlert() {
 // Task  Removal Function
 
 function remove(arg) {
-  // alert("hai");
   let n = "tr_" + arg;
   document.getElementById("items").deleteRow(n);
 }
